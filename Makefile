@@ -1,7 +1,7 @@
 CC = cc
 CFLAGS = -Wall -g
 
-all: main hello
+all: main helloworld
 
 main: main.o
 	$(CC) main.o -o main
