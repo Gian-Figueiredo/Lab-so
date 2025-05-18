@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <sys/wait.h>
 
 int main() {
     int n;
@@ -19,7 +18,6 @@ int main() {
         }
         
         if (pid > 0) {
-            wait(NULL);
             printf("Execucao do pai\n");
         }
 
