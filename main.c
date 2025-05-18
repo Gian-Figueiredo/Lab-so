@@ -13,7 +13,6 @@ int main() {
         pid = fork();
 
         if (pid == 0) {
-            printf("Execução do filho\n");
             execl("./helloworld", "helloworld", NULL);
             perror("execl falhou");
             exit(1);
@@ -21,7 +20,7 @@ int main() {
         
         if (pid > 0) {
             wait(NULL);
-            printf("Execução do pai\n");
+            printf("Execucao do pai\n");
         }
 
         if (pid < 0) {

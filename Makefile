@@ -16,6 +16,6 @@ helloworld.o: helloworld.c
 	$(CC) $(CFLAGS) -c helloworld.c -o helloworld.o
 
 clean:
-	rm -f *.o main hello
+	rm -f *.o main helloworld
 
 .PHONY: all clean
