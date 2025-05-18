@@ -20,11 +20,11 @@ int main() {
         }
         
         if (pid > 0) {
+            wait(NULL);
             printf("Execução do pai\n");
         }
 
         if (pid < 0) {
-            wait(NULL);
             perror("fork falhou");
         }
     }
