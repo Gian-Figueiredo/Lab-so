@@ -1,18 +1,21 @@
 CC = cc
-CFLAGS = -Wall
+CFLAGS = -Wall -g
 
-all: programa
+all: main hello
 
-programa: principal.o helloworld.o
-	$(CC) $(CFLAGS) -o principal.o helloworld.o
+main: main.o
+	$(CC) main.o -o main
 
-principal.o: principal.c
-	$(CC) $(CFLAGS) -c principal.c
+helloworld: helloworld.o
+	$(CC) helloworld.o -o helloworld
+
+main.o: main.c
+	$(CC) $(CFLAGS) -c main.c -o main.o
 
 helloworld.o: helloworld.c
-	$(CC) $(CFLAGS) -c helloworld.c
+	$(CC) $(CFLAGS) -c helloworld.c -o helloworld.o
 
 clean:
-	rm -f *.o programa
+	rm -f *.o main hello
 
 .PHONY: all clean
