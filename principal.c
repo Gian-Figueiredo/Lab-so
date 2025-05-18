@@ -14,7 +14,7 @@ int main() {
 
         if (pid == 0) {
             printf("Execução do filho\n");
-            execl("./hello", "hello", NULL);
+            execl("./helloworld", "helloworld", NULL);
             perror("execl falhou");
             exit(1);
         }
