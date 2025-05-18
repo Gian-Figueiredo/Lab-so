@@ -23,7 +23,7 @@ int main() {
         }
 
         if (pid < 0) {
-            wait(NULL)
+            wait(NULL);
             perror("fork falhou");
         }
     }
