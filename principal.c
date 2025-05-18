@@ -5,7 +5,7 @@
 
 int main() {
     int n;
-    printf("Insira o número de execuções: ");
+    printf("Insira o numero de execucoes: ");
     scanf("%d", &n);
 
     for (int i = 0; i < n; i++) {
