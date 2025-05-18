@@ -1,5 +1,5 @@
 CC = cc
-CFLAGS = -Wall -g
+CFLAGS = -Wall
 
 all: programa
 
