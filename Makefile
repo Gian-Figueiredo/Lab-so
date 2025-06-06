@@ -1,4 +1,4 @@
-obj-m+=hello-module.o
+obj-m+=kernel-thread.o
  
 all:
 	make -C /lib/modules/$(shell uname -r)/build/ M=$(PWD) modules
